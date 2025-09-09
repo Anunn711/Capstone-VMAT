@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 interface LoginProps {
   onLoginSuccess: () => void;
