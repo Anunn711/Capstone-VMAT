@@ -1,10 +1,13 @@
 import React from 'react';
+import Sidebar from './Sidebar'
 
 const Dashboard: React.FC = () => {
   return (
-    <div className="container mt-5">
-      <h2>Welcome to the Dashboard!</h2>
-      <p>This is your dashboard after successful login.</p>
+    <div className="d-flex">
+      <Sidebar />
+      <div className="flex-grow-1 p-4">
+        <h1>Welcome to your dashboard!</h1>
+      </div>
     </div>
   );
 };
