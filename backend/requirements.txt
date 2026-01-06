@@ -1,0 +1,12 @@
+Flask
+Flask-SQLAlchemy
+Flask-Cors
+mysql-connector-python
+python-dotenv
+flask-jwt-extended
+requests
+httpx
+jsonschema
+pytest>=7.0.0
+pytest-flask>=1.2.0
+pytest-cov>=4.0.0
