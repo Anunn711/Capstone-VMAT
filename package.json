@@ -1,0 +1,28 @@
+{
+  "name": "capstone-project-vmat",
+  "version": "1.0.0",
+  "scripts": {
+    "cypress:open": "cypress open",
+    "cypress:run": "cypress run",
+    "e2e:test": "start-server-and-test start:backend http://localhost:5000 start:frontend http://localhost:3000 cypress:run",
+    "e2e:dev": "cypress open",
+    "start:backend": "cd backend && python server.py",
+    "start:frontend": "cd frontend && npm start",
+    "start:all": "concurrently \"npm run start:backend\" \"npm run start:frontend\"",
+    "test:all": "npm run test:backend && npm run test:frontend && npm run e2e:test",
+    "test:backend": "cd backend && pytest",
+    "test:frontend": "cd frontend && npm test -- --watchAll=false"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.8",
+    "react-bootstrap": "^2.10.10"
+  },
+  "devDependencies": {
+    "@cypress/code-coverage": "^3.14.7",
+    "concurrently": "^8.2.2",
+    "cypress": "^15.7.0",
+    "nyc": "^17.1.0",
+    "start-server-and-test": "^2.0.3",
+    "typescript": "^5.9.3"
+  }
+}
